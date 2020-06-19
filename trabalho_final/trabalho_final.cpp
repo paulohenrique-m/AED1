@@ -76,7 +76,7 @@ public:
     /*
     descrição:procedimentos para setar cada parte do agente no mundo
     entrada:valores inteiros e 1 valor passado por ponteiro
-    saída:não tem
+    saída:não tem saída
     */
     /*usar em outras funções*/
     int get_x()
@@ -110,6 +110,7 @@ public:
     };
     void set_posicao(int x, int y, MUNDO *vetor)
     {
+        /*setar posição do agente no mundo passando por ponteiro*/
         vetor->set_agente(x, y, 1);
     }
     void movimento(int x, int y)
