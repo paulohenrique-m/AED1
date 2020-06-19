@@ -74,10 +74,10 @@ public:
         mundo = valor_matriz;
     }
     /*
-        descrição:
-        entrada:
-        saída:
-        */
+    descrição:procedimentos para setar cada parte do agente no mundo
+    entrada:valores inteiros e 1 valor passado por ponteiro
+    saída:não tem
+    */
     /*usar em outras funções*/
     int get_x()
     {
@@ -91,6 +91,11 @@ public:
     {
         return estado;
     }
+    /*
+    descrição:funções para usufruir do agente em outras partes do algoritmo
+    entrada:não tem
+    saída:movimentos do agente em relação ao mundo
+    */
 };
 class WALLS : public AGENTE
 {
@@ -115,6 +120,7 @@ public:
 int main()
 {
     MUNDO jogo;
+    //chama o construtor
     jogo.imprime_mundo();
     WALLS objeto(1, 1, &jogo, 1);
     jogo.imprime_mundo();
